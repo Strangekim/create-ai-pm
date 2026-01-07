@@ -1,6 +1,6 @@
 {
   "name": "create-ai-pm",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "AI 기반 자율 프로젝트 관리 시스템 스캐폴딩 도구",
   "main": "src/index.js",
   "bin": {
