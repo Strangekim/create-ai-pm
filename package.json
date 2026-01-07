@@ -1,0 +1,35 @@
+{
+  "name": "create-ai-pm",
+  "version": "1.0.0",
+  "description": "AI 기반 자율 프로젝트 관리 시스템 스캐폴딩 도구",
+  "main": "src/index.js",
+  "bin": {
+    "create-ai-pm": "./bin/create-ai-pm.js"
+  },
+  "scripts": {
+    "test": "node bin/create-ai-pm.js --help"
+  },
+  "keywords": [
+    "ai",
+    "project-management",
+    "cli",
+    "scaffolding",
+    "team",
+    "productivity"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^11.1.0",
+    "inquirer": "^8.2.6",
+    "ora": "^5.4.1"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/create-ai-pm"
+  }
+}
