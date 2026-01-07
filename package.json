@@ -15,9 +15,11 @@
     "cli",
     "scaffolding",
     "team",
-    "productivity"
+    "productivity",
+    "ai-pm",
+    "autonomous"
   ],
-  "author": "",
+  "author": "Strangekim",
   "license": "MIT",
   "dependencies": {
     "chalk": "^4.1.2",
@@ -30,6 +32,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/your-username/create-ai-pm"
-  }
+    "url": "git+https://github.com/Strangekim/create-ai-pm.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Strangekim/create-ai-pm/issues"
+  },
+  "homepage": "https://github.com/Strangekim/create-ai-pm#readme"
 }

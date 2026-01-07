@@ -62,9 +62,15 @@ async function linkCommand(hubUrl, options) {
         console.log(chalk.gray(`   ${hubConfig.description}`));
         console.log('');
 
-        // 3. 팀원 목록에서 본인 선택
-        const memberChoices = hubConfig.members.map(m => ({
-            name: `${m.nickname} (${m.role})${m.isLeader ? ' 👑' : ''}`,
+        // 3. 팀원 목록에서 본인 선택 (팀장 제외)
+        const nonLeaderMembers = hubConfig.members.filter(m => !m.isLeader);
+
+        if (nonLeaderMembers.length === 0) {
+            throw new Error('연결 가능한 팀원이 없습니다. 팀장은 init으로 Hub를 관리하세요.');
+        }
+
+        const memberChoices = nonLeaderMembers.map(m => ({
+            name: `${m.nickname} (${m.role})`,
             value: m
         }));
 
