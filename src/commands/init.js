@@ -179,10 +179,10 @@ async function initCommand(projectName, options) {
             path.join(targetDir, 'config', 'config_changelog.md')
         );
 
-        // logs/.gitignore 생성
+        // PM Hub 루트 .gitignore 생성 (로컬 설정 제외)
         fs.writeFileSync(
-            path.join(targetDir, 'memory', 'logs', '.gitignore'),
-            '# 로그 파일은 git에서 추적\n# 필요시 수정하세요\n'
+            path.join(targetDir, '.gitignore'),
+            '# 로컬 설정 파일 (팀원별 다름 - push 금지!)\n.local-config.json\n'
         );
 
         // hub-config.json 생성
